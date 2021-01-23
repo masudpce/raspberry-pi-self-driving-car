@@ -1,0 +1,24 @@
+1. Lane Detection
+    a. Histogram Method
+        i. very simple. No details given.
+            no opencv required:
+            https://becominghuman.ai/building-self-driving-rc-car-series-5-serverless-control-using-computer-vision-fdf0d0136888
+
+            https://github.com/yazeedalrubyli/SDRC
+        ii. uses opencv.
+            https://www.murtazahassan.com/courses/raspberry-pi-ultimate-robot/
+            https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
+
+    b. Canny-Hough transformation
+        i.  Simple, illustrated with servo and picture. NO details given about how it works.
+            Uses picamera, opencv.
+            https://www.hackster.io/Abhinav_Abhi/road-lane-detection-with-raspberry-pi-a4711f
+        ii. Written and described tutorial for pi
+            https://towardsdatascience.com/deeppicar-part-4-lane-following-via-opencv-737dd9e47c96
+        iii. No motor control, no pi. Just lane detection
+            https://www.youtube.com/watch?v=eLTLtUVuuy4&list=PL-LzoxYl9z5a-SsrN3fe35mOKxMep8rHD&index=1&t=445s
+            
+
+2. Traffic light (aka color ball Detection)
+    a. Guzunty piter from magpi tutorial
+        https://github.com/Guzunty/Pi/tree/master/src/gz_piter

@@ -3,3 +3,6 @@
 2. voltage converter with voltmetre ammeter
 [xl6009 can not be used because generally 2A is supported.]
     a. 550tk techshop - https://www.techshopbd.com/product-categories/modules/3259/cc-cv-buck-module-with-ammeter-voltmeter-techshop-bangladesh
+	
+3. 18650 Battery charger. 
+4. 18650 4 battery holder. 2 will be used for motor, 2 for pi powering. manually add extra wires.
