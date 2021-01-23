@@ -25,3 +25,6 @@
 2. Traffic light (aka color ball Detection)
     a. Guzunty piter from magpi tutorial aka symbol finder
         https://github.com/Guzunty/Pi/tree/master/src/gz_piter
+    
+Additional:
+gpiozero documentation:  https://gpiozero.readthedocs.io/en/stable/index.html
