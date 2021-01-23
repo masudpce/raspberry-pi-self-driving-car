@@ -5,13 +5,16 @@
             https://becominghuman.ai/building-self-driving-rc-car-series-5-serverless-control-using-computer-vision-fdf0d0136888
 
             https://github.com/yazeedalrubyli/SDRC
-        ii. uses opencv.
+        ii. Murtaza course.
+            uses opencv. 
+            No github available for it. code copied from course page.
             https://www.murtazahassan.com/courses/raspberry-pi-ultimate-robot/
             https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
 
     b. Canny-Hough transformation
         i.  Simple, illustrated with servo and picture. NO details given about how it works.
             Uses picamera, opencv.
+            Need to inspect how it works in details and compare with others.
             https://www.hackster.io/Abhinav_Abhi/road-lane-detection-with-raspberry-pi-a4711f
         ii. Written and described tutorial for pi
             https://towardsdatascience.com/deeppicar-part-4-lane-following-via-opencv-737dd9e47c96
@@ -20,5 +23,5 @@
             
 
 2. Traffic light (aka color ball Detection)
-    a. Guzunty piter from magpi tutorial
+    a. Guzunty piter from magpi tutorial aka symbol finder
         https://github.com/Guzunty/Pi/tree/master/src/gz_piter
