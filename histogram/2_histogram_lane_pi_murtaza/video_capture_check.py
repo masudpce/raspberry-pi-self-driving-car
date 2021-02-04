@@ -18,5 +18,5 @@ while True:
     if cv2.waitKey(1) & 0xff == ord('q'):   # Pressing q will exit the program.
         break
 
-cap.release()
-cv2.destroyAllWindows()
+cap.release()                 # gentle handling
+cv2.destroyAllWindows()       # clean exit
