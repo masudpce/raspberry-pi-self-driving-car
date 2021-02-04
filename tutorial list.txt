@@ -1,14 +1,14 @@
 1. Lane Detection
     a. Histogram Method
-        i. very simple. No details given.
+        i.  No details given. Tested - didn't work out of the box. Written for python2. Requires overhauling to even continue.
             [software: no opencv required, uses picamera library for camera, brown threads are used as lane marking. Code copied from github. ]
             [off-the-shelve readymade toy car. so motors are powered from cars pencil battery and pi powered from power bank]
             https://becominghuman.ai/building-self-driving-rc-car-series-5-serverless-control-using-computer-vision-fdf0d0136888
 
             https://github.com/yazeedalrubyli/SDRC
             
-        ii. Murtaza course.
-            [software: Uses opencv. Lane is white paper. No github available for it. Code copied from course page.]
+        ii. Murtaza course. Very detailed and up-to-date
+            [software: Uses opencv. Lane is white paper. No GitHub available for it. Code copied from course page.]
             [hardware: uses two different power source: power bank for pi, 2pc 18650 for motors]
             https://www.murtazahassan.com/courses/raspberry-pi-ultimate-robot/
             https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
