@@ -11,14 +11,14 @@ def main():
  
     img = WebcamModule.getImg()
     curveVal= getLaneCurve(img,1)
- 
-    sen = 1.3  # SENSITIVITY
     maxVAl= 0.3 # MAX SPEED
     if curveVal>maxVAl:curveVal = maxVAl
     if curveVal<-maxVAl: curveVal =-maxVAl
+
+    #sen = 1.3  # SENSITIVITY
     #print(curveVal)
     if curveVal>0:      # Deadzone, if in this -0.08 to 0.05 then no turning
-        sen =1.7
+        #sen =1.7
         if curveVal<0.05: curveVal=0
     else:
         if curveVal>-0.08: curveVal=0
