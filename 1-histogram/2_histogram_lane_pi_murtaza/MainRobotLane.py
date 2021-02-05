@@ -22,7 +22,6 @@ def main():
         if curveVal<0.05: curveVal=0
     else:
         if curveVal>-0.08: curveVal=0
-    #cv2.waitKey(1)
     
     #============== Movement
     #motor.move(0.20,-curveVal*sen,0.05)
@@ -33,6 +32,7 @@ def main():
     elif curveVal < 0.0 :
         my_car.left(curveVal)
     
+    #cv2.waitKey(1)   # Necessary if we want to preview
      
  
 if __name__ == '__main__':
