@@ -1,0 +1,5 @@
+Region of interest, trackbar values (working good values):
+width top     : 102
+height top    : 160
+width bottom  : 20
+height bottom : 240
