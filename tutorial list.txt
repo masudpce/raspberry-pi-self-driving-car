@@ -1,4 +1,4 @@
-1. Lane Detection
+1. Lane Detection  good
     a. Histogram Method
         i.  No details given. Tested - didn't work out of the box. Written for python2. Requires overhauling to even continue.
             [software: no opencv required, uses picamera library for camera, brown threads are used as lane marking. Code copied from github. ]
