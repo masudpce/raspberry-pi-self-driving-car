@@ -1,10 +1,12 @@
 
+from gpiozero import Robot
 from MotorModule import Motor
 from LaneModule import getLaneCurve
 import WebcamModule
  
 ##################################################
 motor = Motor(2,3,4,17,22,27)
+my_car = Robot(left=(4,14), right=(17,18) )
 ##################################################
  
 def main():
@@ -17,7 +19,7 @@ def main():
     if curveVal>maxVAl:curveVal = maxVAl
     if curveVal<-maxVAl: curveVal =-maxVAl
     #print(curveVal)
-    if curveVal>0:
+    if curveVal>0:      # Deadzone, if in this -0.08 to 0.05 then no turning
         sen =1.7
         if curveVal<0.05: curveVal=0
     else:
