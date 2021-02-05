@@ -1,7 +1,7 @@
 
 from gpiozero import Robot
 from MotorModule import Motor
-from LaneModule import getLaneCurve
+from LaneDetectionModule import getLaneCurve
 import WebcamModule
  
 ##################################################
