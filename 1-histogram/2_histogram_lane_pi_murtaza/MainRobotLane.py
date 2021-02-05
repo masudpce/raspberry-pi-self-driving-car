@@ -1,11 +1,9 @@
 
 from gpiozero import Robot
-from MotorModule import Motor
 from LaneDetectionModule import getLaneCurve
 import WebcamModule
  
 ##################################################
-motor = Motor(2,3,4,17,22,27)
 my_car = Robot(left=(4,14), right=(17,18) )
 ##################################################
  
@@ -24,7 +22,6 @@ def main():
         if curveVal<0.05: curveVal=0
     else:
         if curveVal>-0.08: curveVal=0
-    motor.move(0.20,-curveVal*sen,0.05)
     #cv2.waitKey(1)
     
     #============== Movement
