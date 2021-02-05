@@ -7,6 +7,7 @@ avgVal = 10
 
 
 def getLaneCurve(img, display=2):
+    """ Total 5 steps """
     imgCopy = img.copy()
     imgResult = img.copy()
     #### STEP 1
