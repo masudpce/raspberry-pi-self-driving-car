@@ -1,10 +1,9 @@
-
-from gpiozero import Robot
+# from gpiozero import Robot
 from LaneDetectionModule import getLaneCurve
 import WebcamModule
  
 ##################################################
-my_car = Robot(left=(4,14), right=(17,18) )
+# my_car = Robot(left=(4,14), right=(17,18) )
 ##################################################
  
 def main():
@@ -23,6 +22,7 @@ def main():
     else:
         if curveVal>-0.08: curveVal=0
     
+    """
     #============== Movement
     #motor.move(0.20,-curveVal*sen,0.05)
     if curveVal == 0 : 
@@ -34,6 +34,7 @@ def main():
     
     #cv2.waitKey(1)   # Necessary if we want to preview
      
+    """
  
 if __name__ == '__main__':
     while True:
