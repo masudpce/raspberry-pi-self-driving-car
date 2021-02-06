@@ -60,6 +60,10 @@ while True:
     result = cv2.bitwise_and(img, img, mask=mask)  # outputs with original color
 
     match_mask = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)   # convert into 3 channels, same as original
+
+    """ If only stack original and result, both are fully visible.
+     If 3 is stacked then, last one is cropped from right side.
+     All source must have same number of channels"""
     cv2.imshow('Horizontal Stacking', hStack)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
