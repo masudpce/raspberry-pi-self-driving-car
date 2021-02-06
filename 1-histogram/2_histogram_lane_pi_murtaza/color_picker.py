@@ -18,6 +18,8 @@ def empty():
 # Initialize trackbar
 cv2.namedWindow("HSV")
 cv2.resizeWindow("HSV", 640, 240)
+# trackbar inputs:
+# trackbar name, window name, initial value, max value, any null function
 cv2.createTrackbar("HUE Min", "HSV", 40, 179, empty)
 cv2.createTrackbar("HUE Max", "HSV", 160, 179, empty)
 cv2.createTrackbar("SAT Min", "HSV", 0, 255, empty)
