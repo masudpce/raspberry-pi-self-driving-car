@@ -90,6 +90,7 @@ if __name__ == '__main__':
 
     frameCounter = 0
     while True:
+        # continuous loop
         frameCounter += 1
         if cap.get(cv2.CAP_PROP_FRAME_COUNT) == frameCounter:
             cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
