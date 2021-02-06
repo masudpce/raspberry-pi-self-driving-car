@@ -37,12 +37,12 @@ def main():
         my_car.right(curveVal)
     elif curveVal < 0.0 :
         my_car.left(curveVal)
-    
-    #cv2.waitKey(1)   # Necessary if we want to preview
-     
     """
     """
  
 if __name__ == '__main__':
     while True:
         main()
+        # To preview
+        if cv2.waitKey(1) & 0xff == ord('q'):
+            break
