@@ -22,8 +22,6 @@ def thresholding(img):
 
 
 def warpImg(img, points, w, h, inv=False):
-    pts1 = np.float32(points)
-    pts2 = np.float32([[0, 0], [w, 0], [0, h], [w, h]])
     """change to birds eye view
     input: img    = src
            points = the points which will be warped
@@ -32,6 +30,8 @@ def warpImg(img, points, w, h, inv=False):
     point is specified as first width then height, like (w,h)=(0,0)
     Order:top-left, top-right, bottom-left, bottom-right
     """
+    pts1 = np.float32(points)       # src points
+    pts2 = np.float32([[0, 0], [w, 0], [0, h], [w, h]])      # dst points
     if inv:
         matrix = cv2.getPerspectiveTransform(pts2, pts1)
     else:
