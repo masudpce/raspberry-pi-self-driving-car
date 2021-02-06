@@ -41,6 +41,8 @@ def main():
     """
  
 if __name__ == '__main__':
+    intialTrackBarVals = [102, 160, 20, 240]
+    utlis.initializeTrackbars(intialTrackBarVals)
     while True:
         main()
         # To preview
