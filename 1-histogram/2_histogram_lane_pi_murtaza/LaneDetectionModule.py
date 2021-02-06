@@ -7,7 +7,13 @@ avgVal = 10
 
 
 def getLaneCurve(img, display=2):
-    """ Total 5 steps """
+    """ 
+    display options:
+        0: Nothing will be displayed in the window
+        1: Show only resulted image (marked by detected lane)
+        2: Shows full pipeline with six frames stacked from different phases
+    Total 5 steps
+    """
     imgCopy = img.copy()
     imgResult = img.copy()
     #### STEP 1
