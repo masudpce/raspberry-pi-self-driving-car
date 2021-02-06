@@ -27,6 +27,7 @@ def getLaneCurve(img, display=2):
     hT, wT, c = img.shape     # the order is Height, width and channel/depth
     points = utlis.valTrackbars()      # trackbar initialized with values in main function
 
+    # order of W and H can be arbitrary but must be consistent across all functions
     imgWarp = utlis.warpImg(imgThres, points, wT, hT)
     imgWarpPoints = utlis.drawPoints(imgCopy, points)
 
