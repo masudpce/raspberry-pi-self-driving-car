@@ -51,7 +51,6 @@ while True:
     lower = np.array([h_min, s_min, v_min])
     upper = np.array([h_max, s_max, v_max])
 
-    hStack = np.hstack([img, mask, result])
     # any hsv range chosen, gives white for selection and black for exclusion.
     mask = cv2.inRange(imgHsv, lower, upper)  # output is scalar
 
@@ -64,6 +63,9 @@ while True:
     """ If only stack original and result, both are fully visible.
      If 3 is stacked then, last one is cropped from right side.
      All source must have same number of channels"""
+    # hStack = np.hstack([img, match_mask, result])
+    hStack = np.hstack([img, result])
+
     cv2.imshow('Horizontal Stacking', hStack)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
