@@ -16,7 +16,7 @@ import cv2
 
 def main():
     img = WebcamModule.getImg()
-    curveVal= getLaneCurve(img,1)
+    curveVal = getLaneCurve(img, 2)
 
     #sen = 1.3  # SENSITIVITY
     maxVAl= 1.0 # MAX SPEED
