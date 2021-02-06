@@ -15,6 +15,7 @@ def empty():
     pass
 
 
+# Initialize trackbar
 cv2.namedWindow("HSV")
 cv2.resizeWindow("HSV", 640, 240)
 cv2.createTrackbar("HUE Min", "HSV", 40, 179, empty)
