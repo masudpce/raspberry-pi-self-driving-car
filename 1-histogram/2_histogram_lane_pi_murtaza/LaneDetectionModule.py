@@ -18,6 +18,7 @@ def getLaneCurve(img, display=2):
     imgResult = img.copy()
 
     # ============ STEP 1
+    """ Produce mask; min and max hsv value range is hardcoded in utlis module."""
     imgThres = utlis.thresholding(img)
 
     hT, wT, c = img.shape
