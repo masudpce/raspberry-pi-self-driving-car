@@ -65,13 +65,15 @@ def getLaneCurve(img, display=2):
                      (w * x + int(curve // 50), midY + 10), (0, 0, 255), 2)
         # fps = cv2.getTickFrequency() / (cv2.getTickCount() - timer);
         # cv2.putText(imgResult, 'FPS ' + str(int(fps)), (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (230, 50, 50), 3);
-    if display == 2:
-        imgStacked = utlis.stackImages(0.7, ([img, imgWarpPoints, imgWarp],
-                                             [imgHist, imgLaneColor, imgResult]))
-        cv2.imshow('ImageStack', imgStacked)
-    elif display == 1:
-        cv2.imshow('Resutlt', imgResult)
-
+        if display == 1:
+            cv2.imshow('Result', imgResult)
+        elif display == 2:
+            imgStacked = utlis.stackImages(0.7, ([img, imgWarpPoints, imgWarp],
+                                                 [imgHist, imgLaneColor, imgResult]))
+            cv2.imshow('ImageStack', imgStacked)
+        
+    
+    
     # ========= NORMALIZATION
     curve = curve / 100
     if curve > 1: curve == 1
