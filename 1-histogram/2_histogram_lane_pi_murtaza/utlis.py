@@ -9,7 +9,11 @@ import numpy as np
 
 
 def thresholding(img):
-    """Select lane/line color to detect"""
+    """Gives mask for specific color
+    Chosen color is hardcoded.
+    input: original RGB image
+    output: scalar(single channel) mask, (1 for matched pixels, 0 for otherwise.)
+    """
     imgHsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     lowerWhite = np.array([80, 0, 0])
     upperWhite = np.array([255, 160, 255])
