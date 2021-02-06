@@ -50,11 +50,12 @@ while True:
     # ========== create mask
     lower = np.array([h_min, s_min, v_min])
     upper = np.array([h_max, s_max, v_max])
-    mask = cv2.inRange(imgHsv, lower, upper)
     result = cv2.bitwise_and(img, img, mask=mask)
 
     mask = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
     hStack = np.hstack([img, mask, result])
+    # any hsv range chosen, gives white for selection and black for exclusion.
+    mask = cv2.inRange(imgHsv, lower, upper)  # output is scalar
     cv2.imshow('Horizontal Stacking', hStack)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
