@@ -99,7 +99,7 @@ if __name__ == '__main__':
         success, img = cap.read()
         img = cv2.resize(img, (480, 240))
         curve = getLaneCurve(img, display=2)
-        print(curve)
+        print("curve = " + str(curve))
         # cv2.imshow('Vid',img)
         #cv2.waitKey(1)
         if cv2.waitKey(1) & 0xff == ord('q'):
