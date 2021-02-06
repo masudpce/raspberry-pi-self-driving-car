@@ -16,28 +16,29 @@ def getLaneCurve(img, display=2):
     """
     imgCopy = img.copy()
     imgResult = img.copy()
-    #### STEP 1
+
+    # ============ STEP 1
     imgThres = utlis.thresholding(img)
 
-    #### STEP 2
     hT, wT, c = img.shape
     points = utlis.valTrackbars()
+    # ============ STEP 2
     imgWarp = utlis.warpImg(imgThres, points, wT, hT)
     imgWarpPoints = utlis.drawPoints(imgCopy, points)
 
-    #### STEP 3
+    # ============ STEP 3
     middlePoint, imgHist = utlis.getHistogram(imgWarp, display=True, minPer=0.5, region=4)
     curveAveragePoint, imgHist = utlis.getHistogram(imgWarp, display=True, minPer=0.9)
     curveRaw = curveAveragePoint - middlePoint
 
-    #### SETP 4
+    # ============ STEP 4
     curveList.append(curveRaw)
     if len(curveList) > avgVal:
         curveList.pop(0)
     curve = int(sum(curveList) / len(curveList))
 
-    #### STEP 5
     if display != 0:
+    # ============ STEP 5
         imgInvWarp = utlis.warpImg(imgWarp, points, wT, hT, inv=True)
         imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)
         imgInvWarp[0:hT // 3, 0:wT] = 0, 0, 0
@@ -62,7 +63,7 @@ def getLaneCurve(img, display=2):
     elif display == 1:
         cv2.imshow('Resutlt', imgResult)
 
-    #### NORMALIZATION
+    # ========= NORMALIZATION
     curve = curve / 100
     if curve > 1: curve == 1
     if curve < -1: curve == -1
