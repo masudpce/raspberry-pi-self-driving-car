@@ -11,6 +11,7 @@ cap.set(4, frameHeight)
 
 
 def empty():
+    """ Null function for trackbar"""
     pass
 
 
