@@ -87,6 +87,7 @@ if __name__ == '__main__':
     cap = cv2.VideoCapture(0)   # use camera
     intialTrackBarVals = [102, 160, 20, 240]
     utlis.initializeTrackbars(intialTrackBarVals)
+
     frameCounter = 0
     while True:
         frameCounter += 1
