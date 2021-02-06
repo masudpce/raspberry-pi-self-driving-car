@@ -42,8 +42,10 @@ def getLaneCurve(img, display=2):
         curveList.pop(0)
     curve = int(sum(curveList) / len(curveList))
 
-    if display != 0:
     # ============ STEP 5
+    if display == 0:
+        pass
+    else:
         imgInvWarp = utlis.warpImg(imgWarp, points, wT, hT, inv=True)
         imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)
         imgInvWarp[0:hT // 3, 0:wT] = 0, 0, 0
