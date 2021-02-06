@@ -59,6 +59,10 @@ def initializeTrackbars(intialTracbarVals, wT=480, hT=240):
 
 
 def valTrackbars(wT=480, hT=240):
+    """
+    point is specified as first width then height, like (w,h)=(0,0)
+    Order:top-left, top-right, bottom-left, bottom-right
+    """
     widthTop = cv2.getTrackbarPos("Width Top", "Trackbars")
     heightTop = cv2.getTrackbarPos("Height Top", "Trackbars")
     widthBottom = cv2.getTrackbarPos("Width Bottom", "Trackbars")
