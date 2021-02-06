@@ -101,7 +101,7 @@ if __name__ == '__main__':
         curve = getLaneCurve(img, display=2)
         print("curve = " + str(curve))
         # cv2.imshow('Vid',img)
-        #cv2.waitKey(1)
+        # cv2.waitKey(1)
         if cv2.waitKey(1) & 0xff == ord('q'):
             break
 
