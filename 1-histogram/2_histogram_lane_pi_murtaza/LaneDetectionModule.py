@@ -21,11 +21,12 @@ def getLaneCurve(img, display=2):
     """ Produce mask; min and max hsv value range is hardcoded in utlis module."""
     imgThres = utlis.thresholding(img)
 
-    points = utlis.valTrackbars()
     # ============ STEP 2
     """Region of interest will be warped and resized
      to the size of original image"""
     hT, wT, c = img.shape     # the order is Height, width and channel/depth
+    points = utlis.valTrackbars()      # trackbar initialized with values in main function
+
     imgWarp = utlis.warpImg(imgThres, points, wT, hT)
     imgWarpPoints = utlis.drawPoints(imgCopy, points)
 
