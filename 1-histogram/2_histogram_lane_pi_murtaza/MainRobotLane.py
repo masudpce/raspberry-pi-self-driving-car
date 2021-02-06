@@ -41,6 +41,7 @@ def main():
     #cv2.waitKey(1)   # Necessary if we want to preview
      
     """
+    """
  
 if __name__ == '__main__':
     while True:
