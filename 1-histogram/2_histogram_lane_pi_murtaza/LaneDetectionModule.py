@@ -24,6 +24,8 @@ def getLaneCurve(img, display=2):
     hT, wT, c = img.shape
     points = utlis.valTrackbars()
     # ============ STEP 2
+    """Region of interest will be warped and resized
+     to the size of original image"""
     imgWarp = utlis.warpImg(imgThres, points, wT, hT)
     imgWarpPoints = utlis.drawPoints(imgCopy, points)
 
