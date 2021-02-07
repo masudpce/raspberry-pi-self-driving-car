@@ -5,3 +5,4 @@
 1-histogram/2_histogram_lane_pi_murtaza/test thresholding/main.py
 1-histogram/2_histogram_lane_pi_murtaza/test thresholding/vid1.mp4
 *.pyc
+1-histogram/2_histogram_lane_pi_murtaza/.idea/.name
