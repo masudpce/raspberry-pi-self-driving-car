@@ -53,7 +53,7 @@ def getLaneCurve(img, display=2):
 
         # Inverse warped image to get original unwarped portion
         imgInvWarp = utlis.warpImg(imgWarp, points, wT, hT, inv=True)
-        imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)
+        imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)   # convert to 3 channel to match in stacking
         imgInvWarp[0:hT // 3, 0:wT] = 0, 0, 0
         imgLaneColor = np.zeros_like(img)
         imgLaneColor[:] = 0, 255, 0
