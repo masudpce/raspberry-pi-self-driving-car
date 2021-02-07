@@ -78,8 +78,10 @@ def getLaneCurve(img, display=2):
 
     # ========= NORMALIZATION
     curve = curve / 100
-    if curve > 1: curve = 1         # todo: !!!warning : might be single equal sign, check video
-    if curve < -1: curve = -1       # todo: !!!warning : might be single equal sign, check video
+    if curve > 1:
+        curve = 1
+    if curve < -1:
+        curve = -1
 
     return curve
 
