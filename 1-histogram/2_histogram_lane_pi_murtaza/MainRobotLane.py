@@ -10,7 +10,7 @@ import utlis
 import cv2
  
 ##################################################
-# my_car = Robot(left=(4,14), right=(17,18) )
+my_car = Robot(left=(4,14), right=(17,18) )
 ##################################################
 
 
@@ -28,7 +28,7 @@ def main():
         if curveVal < 0.05: curveVal = 0
     else:
         if curveVal > -0.08: curveVal = 0
-    """
+
     #============== Movement
     #motor.move(0.20,-curveVal*sen,0.05)
     if curveVal == 0 : 
@@ -37,7 +37,7 @@ def main():
         my_car.right(curveVal)
     elif curveVal < 0.0 :
         my_car.left(curveVal)
-    """
+
 
  
 if __name__ == '__main__':
