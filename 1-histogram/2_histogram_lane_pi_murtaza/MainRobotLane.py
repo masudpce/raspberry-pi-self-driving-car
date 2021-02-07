@@ -37,7 +37,6 @@ def main():
     elif curveVal < 0.0:
         my_car.left(curveVal)
 
-
  
 if __name__ == '__main__':
     intialTrackBarVals = [102, 160, 20, 240]
