@@ -75,9 +75,7 @@ def getLaneCurve(img, display=2):
             imgStacked = utlis.stackImages(0.7, ([img, imgWarpPoints, imgWarp],
                                                  [imgHist, imgLaneColor, imgResult]))
             cv2.imshow('ImageStack', imgStacked)
-        
-    
-    
+
     # ========= NORMALIZATION
     curve = curve / 100
     if curve > 1: curve = 1         # todo: !!!warning : might be single equal sign, check video
