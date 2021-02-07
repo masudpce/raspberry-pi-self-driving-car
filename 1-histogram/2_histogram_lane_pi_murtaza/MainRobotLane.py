@@ -28,13 +28,13 @@ def main():
     else:
         if curveVal > -0.08: curveVal = 0
 
-    if curveVal == 0 : 
     # ============== Movement
     # motor.move(0.20,-curveVal*sen,0.05)
+    if curveVal == 0:
         my_car.forward()
-    elif curveVal > 0.0 :
+    elif curveVal > 0.0:
         my_car.right(curveVal)
-    elif curveVal < 0.0 :
+    elif curveVal < 0.0:
         my_car.left(curveVal)
 
 
