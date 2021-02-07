@@ -3,7 +3,7 @@ Commented out three portions related to
 movement for running in pc:
 import, motor def, movement
 """
-# from gpiozero import Robot
+from gpiozero import Robot
 from LaneDetectionModule import getLaneCurve
 import WebcamModule
 import utlis
