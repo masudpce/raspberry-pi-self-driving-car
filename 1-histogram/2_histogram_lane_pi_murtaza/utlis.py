@@ -47,7 +47,8 @@ def nothing(a):
 
 def initializeTrackbars(intialTracbarVals, wT=480, hT=240):
     """
-    point is specified as first width then height, like (w,h)=(0,0)
+    wT is width Target and hT is Height target
+    Point is specified as first width then height, like (w,h)=(0,0)
     Order:top-left, top-right, bottom-left, bottom-right
     """
     cv2.namedWindow("Trackbars")
