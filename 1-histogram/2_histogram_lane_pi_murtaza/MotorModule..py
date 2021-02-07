@@ -21,9 +21,9 @@ class Motor():
         self.pwmB.start(0);
         self.mySpeed=0
  
-    def move(self,speed=0.5,turn=0,t=0):
-        speed *=100
-        turn *=70
+    def move(self, speed=0.5, turn=0, t=0):
+        speed *= 100
+        turn *= 70        # todo: starnge value, need to check video
         leftSpeed = speed-turn
         rightSpeed = speed+turn
  
@@ -31,7 +31,7 @@ class Motor():
         elif leftSpeed<-100: leftSpeed = -100
         if rightSpeed>100: rightSpeed =100
         elif rightSpeed<-100: rightSpeed = -100
-        #print(leftSpeed,rightSpeed)
+        # print(leftSpeed,rightSpeed)
         self.pwmA.ChangeDutyCycle(abs(leftSpeed))
         self.pwmB.ChangeDutyCycle(abs(rightSpeed))
         if leftSpeed>0:GPIO.output(self.In1A,GPIO.HIGH);GPIO.output(self.In2A,GPIO.LOW)
@@ -47,13 +47,13 @@ class Motor():
         sleep(t)
  
 def main():
-    motor.move(0.5,0,2)
+    motor.move(0.5, 0, 2)
     motor.stop(2)
-    motor.move(-0.5,0,2)
+    motor.move(-0.5, 0, 2)
     motor.stop(2)
-    motor.move(0,0.5,2)
+    motor.move(0, 0.5, 2)
     motor.stop(2)
-    motor.move(0,-0.5,2)
+    motor.move(0, -0.5, 2)
     motor.stop(2)
  
 if __name__ == '__main__':

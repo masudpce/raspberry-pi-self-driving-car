@@ -45,6 +45,7 @@ def getLaneCurve(img, display=2):
 
     # ============ STEP 5
     if display == 0:
+        # Do nothing
         pass
     else:
         # if display = 0, then display related nothing will execute 
