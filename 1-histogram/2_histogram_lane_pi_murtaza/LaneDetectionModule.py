@@ -51,6 +51,7 @@ def getLaneCurve(img, display=2):
         # if display = 0, then display related nothing will execute 
         # in any other case, it will execute
 
+        # Inverse warped image to get original unwarped portion
         imgInvWarp = utlis.warpImg(imgWarp, points, wT, hT, inv=True)
         imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)
         imgInvWarp[0:hT // 3, 0:wT] = 0, 0, 0
