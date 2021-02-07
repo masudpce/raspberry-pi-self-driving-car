@@ -1,3 +1,7 @@
+""" This file contains gpiozero and movement codes
+which is related to Pi.
+So can be run in Pi. But can not be run in windows."""
+
 from gpiozero import Robot
 from LaneDetectionModule import getLaneCurve
 import WebcamModule
