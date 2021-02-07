@@ -45,12 +45,15 @@ def getLaneCurve(img, display=2):
 
     # ============ STEP 5
     if display == 0:
+        # Do nothing
         pass
     else:
         # if display = 0, then display related nothing will execute 
         # in any other case, it will execute
+
+        # Inverse warped image to get original unwarped portion
         imgInvWarp = utlis.warpImg(imgWarp, points, wT, hT, inv=True)
-        imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)
+        imgInvWarp = cv2.cvtColor(imgInvWarp, cv2.COLOR_GRAY2BGR)   # convert to 3 channel to match in stacking
         imgInvWarp[0:hT // 3, 0:wT] = 0, 0, 0
         imgLaneColor = np.zeros_like(img)
         imgLaneColor[:] = 0, 255, 0
@@ -72,13 +75,13 @@ def getLaneCurve(img, display=2):
             imgStacked = utlis.stackImages(0.7, ([img, imgWarpPoints, imgWarp],
                                                  [imgHist, imgLaneColor, imgResult]))
             cv2.imshow('ImageStack', imgStacked)
-        
-    
-    
+
     # ========= NORMALIZATION
     curve = curve / 100
-    if curve > 1: curve = 1         # todo: !!!warning : might be single equal sign, check video
-    if curve < -1: curve = -1       # todo: !!!warning : might be single equal sign, check video
+    if curve > 1:
+        curve = 1
+    if curve < -1:
+        curve = -1
 
     return curve
 
