@@ -52,4 +52,5 @@ if __name__ == '__main__':
         main()
         # To preview
         if cv2.waitKey(1) & 0xff == ord('q'):
+            my_car.stop()
             break
