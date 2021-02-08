@@ -53,4 +53,5 @@ if __name__ == '__main__':
         # To preview
         if cv2.waitKey(1) & 0xff == ord('q'):
             my_car.stop()
+            cv2.destroyAllWindows()
             break
