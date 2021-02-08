@@ -42,7 +42,7 @@ def main():
     elif curveVal > 0.0:
         my_car.right(curveVal)
     elif curveVal < 0.0:
-        my_car.left(curveVal)
+        my_car.left(abs(curveVal))
 
  
 if __name__ == '__main__':
