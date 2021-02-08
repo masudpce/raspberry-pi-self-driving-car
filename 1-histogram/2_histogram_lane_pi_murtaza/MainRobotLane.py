@@ -22,6 +22,9 @@ def main():
     curveVal = getLaneCurve(img, 2)
 
     # sen = 1.3  # SENSITIVITY  # disabled for simplicity
+    
+    # lithium battery can deliver high current, so use value lower than 1,
+    # adapter delivers very low current(180mA), so use 1(full available speed)
     if curveVal > maxVal: curveVal = maxVal
     if curveVal < -maxVal: curveVal = -maxVal
     print("curve value = " + str(curveVal))
