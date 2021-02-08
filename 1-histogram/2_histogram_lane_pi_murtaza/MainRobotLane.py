@@ -38,7 +38,7 @@ def main():
     # ============== Movement
     # motor.move(0.20,-curveVal*sen,0.05)
     if curveVal == 0:
-        my_car.forward()
+        my_car.forward(maxVal)
     elif curveVal > 0.0:
         my_car.right(curveVal)
     elif curveVal < 0.0:
