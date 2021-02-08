@@ -1,6 +1,10 @@
 """ This file contains gpiozero and movement codes
 which is related to Pi.
-So can be run in Pi. But can not be run in windows."""
+So can be run in Pi. But can not be run in windows.
+
+Use different maxVal(aka max speed) for battery(0.7) and adapter(1) 
+
+"""
 
 from gpiozero import Robot
 from LaneDetectionModule import getLaneCurve
