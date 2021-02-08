@@ -25,6 +25,7 @@ def main():
     
     # lithium battery can deliver high current, so use value lower than 1,
     # adapter delivers very low current(180mA), so use 1(full available speed)
+    maxVal = 0.7  # MAX SPEED
     if curveVal > maxVal: curveVal = maxVal
     if curveVal < -maxVal: curveVal = -maxVal
     print("curve value = " + str(curveVal))
