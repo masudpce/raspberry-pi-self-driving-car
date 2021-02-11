@@ -11,6 +11,7 @@ from LaneDetectionModule import getLaneCurve
 import WebcamModule
 import utlis
 import cv2
+import time
  
 ##################################################
 my_car = Robot(left=(4, 14), right=(17, 18))
