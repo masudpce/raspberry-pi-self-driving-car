@@ -3,3 +3,4 @@
 	
 3. 18650 Battery charger. 
 4. 18650 4 battery holder. 2 will be used for motor, 2 for pi powering. manually add extra wires.
+
