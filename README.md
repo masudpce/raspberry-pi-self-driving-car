@@ -16,7 +16,7 @@ A battery powered car. The car will be able to follow lane/road with marking. It
 
 ## Software:
 Without machine Learning there are two methods for lane detection:  
-    - Histogram method
+    - Histogram method  
     - Canny-Hough Line detection
     
 Various tutorials are being collected and tested.
