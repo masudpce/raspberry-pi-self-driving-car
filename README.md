@@ -1,5 +1,5 @@
 # final-project
-Autonomous Car
+Autonomous Car  
 A battery powered car. The car will be able to follow lane/road with marking. It will use camera to find the path angle and run over the path.
 
 ## Hardware: 
@@ -15,7 +15,7 @@ A battery powered car. The car will be able to follow lane/road with marking. It
         
 
 ## Software:
-Without machine Learning there are two methods for lane detection:
+Without machine Learning there are two methods for lane detection:  
     - Histogram method
     - Canny-Hough Line detection
     
