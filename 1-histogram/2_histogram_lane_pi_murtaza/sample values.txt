@@ -1,0 +1,11 @@
+Region of interest, trackbar values (working good values):
+width top     : 102
+height top    : 160
+width bottom  : 20
+height bottom : 240
+
+white:
+    hsv:0-179, 0-21, 0-255  [working] [here the first portion of saturation is logical I think. Also, the last half of hue and very last portion of value is required. ]
+    
+for dark room, Tanvir's table lamp only:
+    hsv:30-179, 0-80, 0-255
