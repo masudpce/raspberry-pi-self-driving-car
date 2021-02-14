@@ -9,9 +9,9 @@ import WebcamModule
 import utlis
 import cv2
  
-##################################################
+# ==================
 # my_car = Robot(left=(4,14), right=(17,18) )
-##################################################
+# ==================
 
 
 def main():
@@ -29,7 +29,7 @@ def main():
     else:
         if curveVal > -0.08: curveVal = 0
     """
-    #============== Movement
+    # ============== Movement
     #motor.move(0.20,-curveVal*sen,0.05)
     if curveVal == 0 : 
         my_car.forward()
