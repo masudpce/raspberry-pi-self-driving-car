@@ -1,7 +1,3 @@
-1-histogram/2_histogram_lane_pi_murtaza/test thresholding/utlis.py
-1-histogram/2_histogram_lane_pi_murtaza/test thresholding/__pycache__/utils.cpython-38.pyc
-1-histogram/2_histogram_lane_pi_murtaza/test thresholding/__pycache__/utlis.cpython-38.pyc
-1-histogram/2_histogram_lane_pi_murtaza/test thresholding/main.py
-1-histogram/2_histogram_lane_pi_murtaza/test thresholding/vid1.mp4
-*.pyc
-1-histogram/2_histogram_lane_pi_murtaza/.idea/.name
+1-histogram/2_histogram_lane_pi_murtaza/__pycache__/*
+1-histogram/2_histogram_lane_pi_murtaza/test thresholding/__pycache__/*
+1-histogram/2_histogram_lane_pi_murtaza/.idea/*
