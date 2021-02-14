@@ -8,3 +8,4 @@ for i in range (4):
     sleep(10)
     robot.right()
     sleep(1)
+    
