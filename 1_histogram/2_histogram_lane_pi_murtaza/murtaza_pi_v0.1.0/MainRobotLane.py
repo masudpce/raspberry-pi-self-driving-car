@@ -6,18 +6,17 @@ Use different maxVal(aka max speed) for battery(0.7) and adapter(1)
 
 """
 # ========== Imports Start
-from gpiozero import Robot
+import cv2
+
 from LaneDetectionModule import getLaneCurve
 import WebcamModule
 import utlis
-import cv2
 import time
+
+import gpiozero_robot
 
 # ========== Imports End
  
-# ========== Car Definition Start
-my_car = Robot(left=(4, 14), right=(17, 18))
-# ========== Car Definition End
 
 # ========== Main Function Start
 def main():
@@ -37,21 +36,8 @@ def main():
         if curveVal < 0.05: curveVal = 0
     else:
         if curveVal > -0.08: curveVal = 0
-
-    # ============== Movement
-    # motor.move(0.20,-curveVal*sen,0.05)
-    if curveVal == 0:
-        my_car.forward(maxVal)
-        print("          forward          \n")
-    elif curveVal > 0.0:
-        my_car.right(curveVal)
-        print("           right\n)
-    elif curveVal < 0.0:
-        my_car.left(abs(curveVal))
-        print("left\n")
     
-    time.sleep(0.5)
-    my_car.stop()
+    gpiozero_robot.move(curveVal)
 
 # ========== Main Function End
  
@@ -63,6 +49,6 @@ if __name__ == '__main__':
         main()
         # To preview
         if cv2.waitKey(1) & 0xff == ord('q'):
-            my_car.stop()
+            gpiozero_robot.stopping()
             cv2.destroyAllWindows()
             break
