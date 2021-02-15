@@ -11,7 +11,6 @@ import cv2
 from LaneDetectionModule import getLaneCurve
 import WebcamModule
 import utlis
-import time
 
 import gpiozero_robot
 
