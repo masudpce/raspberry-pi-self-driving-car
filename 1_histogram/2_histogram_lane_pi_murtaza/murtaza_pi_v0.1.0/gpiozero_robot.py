@@ -12,11 +12,11 @@ import time
 
 # ========== Minimum speed and duration values start
 # todo: Need to find out by testing. Use minimum usable value
-min_turn_speed = 0.5
-turn_duration = 0.3
+min_turn_speed = 0.4
+turn_duration = 0.0
 
 min_forward_speed = 0.5
-forward_duration = 0.5
+forward_duration = 0.1
 # ========== Minimum speed and duration values end
 
 # ========== Motor pin definition
