@@ -12,3 +12,15 @@ White Color for lane:
     
 for dark room, Tanvir's table lamp only:
     hsv:30-179, 0-80, 0-255
+
+====================
+When used:
+    1. Robot from gpiozero
+    2. Raspberry Pi 3
+    3. 18650 for plastic gear motor
+Then for single move:
+    min_turn_speed = 0.4  # less than 0.4 and motor stalls
+    turn_duration = 0.0   # though it is 0, it works and in very small increments.
+
+    min_forward_speed = 0.5  # maybe not the minimum, but enough
+    forward_duration = 0.1   # 0.1 works better than 0.0
