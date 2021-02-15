@@ -39,7 +39,7 @@ def main():
     else:
         if curveVal > -0.08:
             curveVal = 0
-    
+
     gpiozero_robot.move(curveVal)
 
 # ========== Main Function End
