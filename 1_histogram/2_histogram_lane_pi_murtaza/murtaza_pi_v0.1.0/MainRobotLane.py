@@ -20,7 +20,7 @@ import gpiozero_robot
 # ========== Main Function Start
 def main():
     img = WebcamModule.getImg()
-    curveVal = getLaneCurve(img, 1)
+    curveVal = getLaneCurve(img, 0)
 
     # sen = 1.3  # SENSITIVITY  # disabled for simplicity
     
