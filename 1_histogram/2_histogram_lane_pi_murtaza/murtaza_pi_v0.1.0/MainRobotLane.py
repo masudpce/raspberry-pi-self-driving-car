@@ -27,14 +27,18 @@ def main():
     # lithium battery can deliver high current, so use value lower than 1,
     # adapter delivers very low current(180mA), so use 1(full available speed)
     maxVal = 0.7  # MAX SPEED
-    if curveVal > maxVal: curveVal = maxVal
-    if curveVal < -maxVal: curveVal = -maxVal
+    if curveVal > maxVal:
+        curveVal = maxVal
+    if curveVal < -maxVal:
+        curveVal = -maxVal
     print("curve value = " + str(curveVal))
     if curveVal > 0:      # Deadzone, if in this -0.08 to 0.05 then no turning
         # sen = 1.7
-        if curveVal < 0.05: curveVal = 0
+        if curveVal < 0.05:
+            curveVal = 0
     else:
-        if curveVal > -0.08: curveVal = 0
+        if curveVal > -0.08:
+            curveVal = 0
     
     gpiozero_robot.move(curveVal)
 
