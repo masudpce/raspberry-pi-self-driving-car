@@ -47,7 +47,11 @@ if __name__ == '__main__':
     utlis.initializeTrackbars(intialTrackBarVals)
     while True:
         main()
-        # To preview
+        """ 
+        To preview, waitKey is necessary.
+        bitwise AND will be evaluated first.
+        ord() returns unicode number for character.
+        """
         if cv2.waitKey(1) & 0xff == ord('q'):
             gpiozero_robot.stopping()
             cv2.destroyAllWindows()
