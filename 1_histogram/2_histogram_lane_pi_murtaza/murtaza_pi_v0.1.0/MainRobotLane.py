@@ -39,7 +39,8 @@ def main():
     gpiozero_robot.move(curveVal)
 
 # ========== Main Function End
- 
+
+
 # ========== If this module is run
 if __name__ == '__main__':
     intialTrackBarVals = [102, 160, 20, 240]
