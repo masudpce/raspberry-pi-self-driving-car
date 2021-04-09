@@ -17,3 +17,7 @@ def main():
     else:
         robot.stop()
         
+if __name__ == '__main__':
+    while True:
+        main()
+        
