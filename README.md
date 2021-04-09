@@ -7,16 +7,17 @@ A battery powered car. The car will be able to follow lane/road with marking. It
 
 Parts list: [N.B.: Unit prices are approximate]  
     
-    - Raspberry Pi 3B+ (1pc)  (4500tk)  
-    - Pi camera (1pc)         (2000tk)
+    - Raspberry Pi 3B+ (1pc)-------------------------  (4500tk)
+    - MicroSD card 16GB (1pc)------------------------   (500tk)  
+    - Pi camera (1pc)--------------------------------  (2000tk)  
     
-    - 90 degree angled small plastic gear motor (2pc)  (60tk)
-    - Wheel Caster (1pc)      (90tk)
-    - Plastic wheel (2pc)     (60tk)
+    - 90 degree angled small plastic gear motor (2pc)    (60tk)
+    - Wheel Caster (1pc)----------------------------     (90tk)
+    - Plastic wheel (2pc)---------------------------     (60tk)  
     
-    - L293d Motor Driver IC (1pc)                       (40tk)
-    - Double battery holder for 18650 (2pc)             (40tk)
-    - Mini breadboard (1pc)                             (60tk)
+    - L293d Motor Driver IC (1pc)-------------------     (40tk)
+    - Double battery holder for 18650 (2pc)---------     (40tk)
+    - Mini breadboard (1pc)-------------------------     (60tk)
         
 
 ## Software:
