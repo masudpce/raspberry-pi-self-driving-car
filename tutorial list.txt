@@ -1,21 +1,21 @@
 1. Lane Detection
     a. Histogram Method
         i.  No details given. Tested - didn't work out of the box. Written for python2. Requires overhauling to even continue.
-            [software: no opencv required, uses picamera library for camera, brown threads are used as lane marking. Code copied from github. ]
+            [software: no OpenCV required, uses picamera library for camera, brown colored threads are used as lane marking. Code copied from GitHub. ]
             [off-the-shelve readymade toy car. so motors are powered from cars pencil battery and pi powered from power bank]
             https://becominghuman.ai/building-self-driving-rc-car-series-5-serverless-control-using-computer-vision-fdf0d0136888
 
             https://github.com/yazeedalrubyli/SDRC
             
         ii. Murtaza course. Very detailed and up-to-date
-            [software: Uses opencv. Lane is white paper. No GitHub available for it. Code copied from course page.]
+            [software: Uses OpenCV. Lane is white paper. No GitHub available for it. Code copied from course page.]
             [hardware: uses two different power source: power bank for pi, 2pc 18650 for motors]
             https://www.murtazahassan.com/courses/raspberry-pi-ultimate-robot/
             https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
 
     b. Canny-Hough transformation
         i.  Simple, illustrated with servo and picture. NO details given about how it works.
-            Uses picamera, opencv.
+            Uses picamera, OpenCV.
             Need to inspect how it works in details and compare with others.
             https://www.hackster.io/Abhinav_Abhi/road-lane-detection-with-raspberry-pi-a4711f
         ii. Written and described tutorial for pi
