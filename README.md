@@ -32,8 +32,7 @@ Various tutorials are being collected and tested.
 Also uses python2. So can not be used by a beginner.  
 When I will have more expertise, then debug it.
 
-- The Second one(Murtaza tutorial) is detailed and has video description.  
-Working on it.
+
     
     
 
