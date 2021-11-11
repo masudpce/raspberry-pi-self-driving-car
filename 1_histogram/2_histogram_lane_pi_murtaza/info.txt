@@ -1,7 +1,7 @@
 playlist: https://www.youtube.com/playlist?list=PLMoSUbG1Q_r_wT0Ac7rOlhlwq9VsZDA0b
 
 first part: 
-https://www.youtube.com/watch?v=aXqoPiMPhDw&list=PLMoSUbG1Q_r_wT0Ac7rOlhlwq9VsZDA0b&index=1&t=557s
+https://youtu.be/aXqoPiMPhDw
 
 free full course:
 https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
