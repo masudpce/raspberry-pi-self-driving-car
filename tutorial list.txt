@@ -12,6 +12,8 @@
             [hardware: uses two different power source: power bank for pi, 2pc 18650 for motors]
             https://www.murtazahassan.com/courses/raspberry-pi-ultimate-robot/
             https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
+            https://github.com/murtazahassan/Raspberry-Pi-Ultimate-Robot
+            https://www.youtube.com/playlist?list=PLMoSUbG1Q_r_wT0Ac7rOlhlwq9VsZDA0b
 
     b. Canny-Hough transformation
         i.  Simple, illustrated with servo and picture. NO details given about how it works.
