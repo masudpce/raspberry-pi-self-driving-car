@@ -47,12 +47,17 @@ Without machine Learning there are two methods for lane detection:
     
 Various tutorials are being collected and tested.
 
-### Histogram directory,  
-- The very first one uses simple code. But it has no details or description.  
-Also uses python2. So can not be used by a beginner.  
-When I will have more expertise, then debug it.
+## Directory Structure
 
+### Histogram directory 
+- histogram simple
+The very first one uses simple code. But it has no details or description. Also uses python2. So can not be used by a beginner.  
+Requires more expertise to debug it.
+- histogram lane pi murtaza
+This is the main directory where I worked, followed tutorial and developed my own working version of self driving car
 
-    
+### Canny Hough directory
+collected from : https://www.hackster.io/Abhinav_Abhi/road-lane-detection-with-raspberry-pi-a4711f    
+Did not try myself.
     
 
