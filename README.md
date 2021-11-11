@@ -1,7 +1,27 @@
 # final-project
-
 Autonomous Car  
 A battery powered car. The car will be able to follow lane/road with marking. It will use camera to find the path angle and run over the path.
+
+Here are the links of the tutorial that I have followed to build my self driving car. 
+I did not made exact replica, I have changed some things to simplify the project.
+
+Playlist: 
+Title: Self Driving Car with Lane Detection using Raspberry Pi (2020)
+https://www.youtube.com/playlist?list=PLMoSUbG1Q_r_wT0Ac7rOlhlwq9VsZDA0b
+
+First part of the 6 part youtube tutorial of murtaza's Self Driving Car:
+Title: Self Driving Car with Lane Detection using Raspberry Pi | OpenCV (2020) p.1
+https://youtu.be/aXqoPiMPhDw
+
+Free full course:
+https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
+
+https://www.murtazahassan.com/courses/raspberry-pi-ultimate-robot/
+            https://www.murtazahassan.com/courses/self-driving-car-using-raspberry-pi/
+            https://github.com/murtazahassan/Raspberry-Pi-Ultimate-Robot
+            https://www.youtube.com/playlist?list=PLMoSUbG1Q_r_wT0Ac7rOlhlwq9VsZDA0b
+                
+
 
 ## Hardware: 
 
